@@ -27,9 +27,13 @@ function defaultParameterValue(a, b) {
  Функция должна возвращать все переданные в нее аргументы в виде массива
  Количество переданных аргументов заранее неизвестно
  */
-function returnArgumentsArray() {
+function returnArgumentsArray() { 
+var result = []; 
+for (var i = 0; i < arguments.length; i++) { 
+result[i] = arguments[i]; 
+} 
+return result; 
 }
-
 /*
  Задание 4:
 
